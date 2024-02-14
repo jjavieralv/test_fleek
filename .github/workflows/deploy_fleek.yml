@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test-deploy:
     runs-on: ubuntu-latest
-    container: fleek/create-react-app:node-16
+    container: fleek/create-react-app:node-latest
     name: A job to test the action-deploy action by deploying a test site
     steps:
       - uses: actions/checkout@v4
