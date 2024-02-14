@@ -3,16 +3,9 @@ on: [push]
 jobs:
   test-deploy:
     runs-on: ubuntu-latest
-    container: fleek/create-react-app:node-latest
     name: A job to test the action-deploy action by deploying a test site
     steps:
-      - uses: actions/checkout@v4
-      - name: Install NodeJS
-        uses: actions/setup-node@v3
-        with:
-          node-version: 21
-      - name: Install depdendencies
-        run: yarn install --pure-lockfile
+      - uses: actions/checkout@v2
       - name: Deploy test site
         id: deploy
         uses: fleekhq/action-deploy@v1
