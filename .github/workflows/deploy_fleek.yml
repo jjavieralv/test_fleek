@@ -1,5 +1,7 @@
-on: [push]
-
+on:
+  workflow_dispatch:
+  push:
+  
 jobs:
   test-deploy:
     runs-on: ubuntu-latest
