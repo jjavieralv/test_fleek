@@ -1,16 +1,11 @@
 on:
-  workflow_dispatch:
-  push:
-  
+  workflow_dispatch:  
 jobs:
   test-deploy:
     runs-on: ubuntu-latest
     name: A job to test the action-deploy action by deploying a test site
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v4
-        with:
-          node-version: latest
       - name: Deploy test site
         id: deploy
         uses: fleekhq/action-deploy@v1.0.1
