@@ -1,10 +1,10 @@
 {
   "site": {
-    "id": "misty-shape-1423",
-    "team": "b12b561d-13ee-4830-95ca-40727688aa96",
+    "id": "",
+    "team": "Jose Javier Alvarez Rodriguez Team",
     "platform": "ipfs",
     "source": "github",
-    "name": "calm-disk-5751"
+    "name": "misty-shape-1423"
   },
   "build": {
     "baseDir": "",
